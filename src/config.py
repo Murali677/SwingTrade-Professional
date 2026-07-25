@@ -29,9 +29,10 @@ OUTPUT_FOLDER = "../reports"
 # Email Settings
 # -----------------------------
 
-EMAIL_SENDER = "ssmura@gmail.com"
-EMAIL_PASSWORD = "zvetsptfwluejaix"
-EMAIL_RECEIVER = "ssmura@gmail.com"
+import os
+EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
